@@ -6,6 +6,14 @@ con relevamientos semanales entre el 20 de abril de hasta el 22 de mayo de 2018.
 Es decir, contiene los precios antes, durante y después de la devaluación ([de alrededor del 25%](https://invst.ly/7ij15))  para todos los productos de venta minorista, para cada sucursal de supermercado de las cadenas que proveen información a este portal.
 
 
+** ATENCION **
+
+Por las limitaciones de ancho de banda del servicio LFS de Github,
+estamos subiendo los archivos acá
+
+http://lab.nqnwebs.com/descargas/datasets_preciosclaros.tar.gz
+
+
 La extracción está basada en un scraper, cuyo código es libre y [se encuentra disponible](https://github.com/mgaitan/preciosa/tree/develop/tools/scrappers/preciosclaros) en como parte del proyecto [Preciosa](https://github.com/mgaitan/preciosa). El scraper está basado en Scrapy y se ejecutó en la plataforma [Scrapinghub](http://scrapinghub.com).
 
 
