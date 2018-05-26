@@ -14,6 +14,19 @@ estamos subiendo los archivos acá
 http://lab.nqnwebs.com/descargas/datasets_preciosclaros.tar.gz
 
 
+Una version Sqlite (a partir de [modelos django](https://github.com/mgaitan/datasets_preciosclaros/blob/master/to_sqlite.ipynb)) de estos datos está en http://lab.nqnwebs.com/descargas/db.sqlite.gz
+
+
+```
+$md5sum datasets_preciosclaros.tar.gz
+ab8fa12caf36c778c4d728e5f399d617  datasets_preciosclaros.tar.gz
+$ md5sum db.sqlite.gz
+ec3a3bc816d3d0ee1547bd3a3a0f8670  db.sqlite.gz
+```
+
+
+
+
 La extracción está basada en un scraper, cuyo código es libre y [se encuentra disponible](https://github.com/mgaitan/preciosa/tree/develop/tools/scrappers/preciosclaros) en como parte del proyecto [Preciosa](https://github.com/mgaitan/preciosa). El scraper está basado en Scrapy y se ejecutó en la plataforma [Scrapinghub](http://scrapinghub.com).
 
 
