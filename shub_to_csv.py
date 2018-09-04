@@ -25,7 +25,6 @@ def jsonl2csv(filepath, type_=None, include=None, exclude=None):
             assert exclude.issubset(all_headers)
             headers -= set(exclude)
 
-        import ipdb; ipdb.set_trace()
         with Path(Path(filepath).with_suffix('.csv').name).open('w') as f:
             writer = csv.DictWriter(f, extrasaction='ignore', fieldnames=headers)
             writer.writeheader()
@@ -39,7 +38,7 @@ def jsonl2csv(filepath, type_=None, include=None, exclude=None):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('infile')
-    parser.add_argument('--exclude', help='Headers to include. Default to none', nargs='*')
+    parser.add_argument('--exclude', help='Headers to exclude. Default to none', nargs='*')
     parser.add_argument('--include', help='Headers to include. Default to all', nargs='*')
     parser.add_argument('--type', help='Limit item to type')
     args = parser.parse_args()
